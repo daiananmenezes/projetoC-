@@ -11,6 +11,7 @@ namespace API.Data
         //Lista de propriedades que vão virar tabelas no banco
         public DbSet<User> Users { get; set; }
         public DbSet<Diet> Diets { get; set; }
+        public DbSet<Meal> Meals { get; set; }
 
     }
 }
