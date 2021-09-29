@@ -1,1 +1,13 @@
-<p>cadastrar-usuario works!</p>
+<div id="nome">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" [(ngModel)]="nome" />
+</div>
+<div id="email">
+    <label for="email">Email:</label>
+    <input type="text" name="email" [(ngModel)]="email" />
+</div>
+<div id="objetivo">
+    <label for="objetivo">Objetivo:</label>
+    <input type="text" name="objetivo" [(ngModel)]="objetivo" />
+</div>
+<button (click)="cadastrar()">Cadastrar</button>

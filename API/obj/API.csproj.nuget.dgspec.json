@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/andreribas/Downloads/projetoC-/API/API.csproj": {}
+    "D:\\Dev\\projetoC-\\API\\API.csproj": {}
   },
   "projects": {
-    "/Users/andreribas/Downloads/projetoC-/API/API.csproj": {
+    "D:\\Dev\\projetoC-\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andreribas/Downloads/projetoC-/API/API.csproj",
+        "projectUniqueName": "D:\\Dev\\projetoC-\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/andreribas/Downloads/projetoC-/API/API.csproj",
-        "packagesPath": "/Users/andreribas/.nuget/packages/",
-        "outputPath": "/Users/andreribas/Downloads/projetoC-/API/obj/",
+        "projectPath": "D:\\Dev\\projetoC-\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\eduta\\.nuget\\packages\\",
+        "outputPath": "D:\\Dev\\projetoC-\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/andreribas/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\eduta\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
