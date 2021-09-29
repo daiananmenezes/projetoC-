@@ -1,3 +1,7 @@
+import { AlterarDietComponent } from './components/diet/alterar-diet/alterar-diet.component';
+import { RemoverDietComponent } from './components/diet/remover-diet/remover-diet.component';
+import { ListarDietComponent } from './components/diet/listar-diet/listar-diet.component';
+import { CadastrarDietComponent } from './components/diet/cadastrar-diet/cadastrar-diet.component';
 
 import { RemoverMealComponent } from './components/meal/remover-meal/remover-meal.component';
 import { EditarMealComponent } from './components/meal/editar-meal/editar-meal.component';
@@ -12,6 +16,11 @@ import { ListarUsuarioComponent } from "./components/usuario/listar-usuario/list
 import { RemoverUsuarioComponent } from "./components/usuario/remover-usuario/remover-usuario.component";
 
 const routes: Routes = [
+
+  {
+    path: "",
+    component: ListarUsuarioComponent,
+  },
   // Usuario
   {
     path: "usuario/listar",
@@ -32,24 +41,39 @@ const routes: Routes = [
   
   // Meal
   {
-    path: "meal/create",
+    path: "refeicao/cadastrar",
     component: CadastrarMealComponent
   },
   {
-    path: "meal/list",
+    path: "refeicao/listar",
     component: ListarMealComponent
   },
   {
-    path: "meal/getbyid/:id",
-    component: ListarMealComponent
-  },
-  {
-    path: "meal/update",
+    path: "refeicao/editar/:id",
     component: EditarMealComponent
   },
   {
-    path: "meal/delete/:nome",
+    path: "refeicao/remover/:nome",
     component: RemoverMealComponent
+  },
+
+  // Dieta
+
+  {
+    path: "dieta/cadastrar",
+    component: CadastrarDietComponent
+  },
+  {
+    path: "dieta/listar",
+    component: ListarDietComponent
+  },
+  {
+    path: "dieta/editar/:id",
+    component: AlterarDietComponent
+  },
+  {
+    path: "dieta/remover/:title",
+    component: RemoverDietComponent
   },
 ];
 

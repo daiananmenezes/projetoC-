@@ -1,7 +1,11 @@
-<a routerLink="/usuario/cadastrar">Cadastrar usuario</a>
+<a routerLink="/usuario/cadastrar">Cadastrar usuario</a><br>
+<a routerLink="/refeicao/cadastrar">Cadastrar Refeicao</a><br>
+<a routerLink="/dieta/cadastrar">Cadastrar Dieta</a>
 
 <ol>
     <li *ngFor="let usuario of usuarios">
         {{ usuario.nome }}
+
+        <a routerLink="/usuario/editar/{{usuario.id}}"> Editar {{usuario.nome}}</a>
     </li>
 </ol>

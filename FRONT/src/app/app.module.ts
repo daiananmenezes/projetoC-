@@ -31,7 +31,7 @@ import { FormsModule } from '@angular/forms';
     CadastrarDietComponent,
     ListarDietComponent,
     AlterarDietComponent,
-    RemoverDietComponent
+    RemoverDietComponent,
     CadastrarMealComponent,
     ListarMealComponent,
     RemoverMealComponent,

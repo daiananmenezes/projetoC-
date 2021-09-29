@@ -14,9 +14,9 @@ export class ListarMealComponent implements OnInit {
   constructor(private service: MealService) {}
 
   ngOnInit(): void {
-    this.service.list().subscribe(meals => {
-      this.meals = meals;
-      console.log(meals);
-    });
+      this.service.list().subscribe((meals) => {
+          this.meals = meals;
+          console.log(meals);
+      });
   }
 }

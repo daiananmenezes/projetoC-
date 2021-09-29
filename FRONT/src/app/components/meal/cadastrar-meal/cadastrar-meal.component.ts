@@ -31,7 +31,8 @@ export class CadastrarMealComponent implements OnInit {
       criadoEm: this.criadoEm
     }
     this.service.create(meal).subscribe(meal => {
-      this.router.navigate(["meal/list"]);
+      console.log("to cadastrando");
+      this.router.navigate(["refeicao/listar"]);
     });
   }
 
