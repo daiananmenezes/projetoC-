@@ -1,1 +1,7 @@
-<p>listar-diet works!</p>
+<a routerLink="/refeicao/cadastrar">Cadastrar Refeicao</a>
+<ol>
+    <li *ngFor="let diet of diets">
+        {{diet.title}}
+    </li>
+</ol>
+

@@ -1,1 +1,10 @@
-<p>cadastrar-diet works!</p>
+<div id="nome">
+    <label for="nome">Nome:</label>
+    <input type="text" name="nome" [(ngModel)]="title">
+</div>
+<div id="descricao">
+    <label for="descricao">Objetivo:</label>
+    <input type="text" name="descricao" [(ngModel)]="objetivo">
+</div>
+
+<button (click)="cadastrar()">Cadastrar</button>
