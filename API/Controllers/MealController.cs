@@ -45,6 +45,19 @@ namespace API.Controllers
             return Ok(meal);
         }
 
+        //GET: api/meal/getbyid/1
+        [HttpGet]
+        [Route("getbydietid/{dietId}")]
+        public IActionResult GetByDietId([FromRoute] int dietId)
+        {
+            var meals = _context.Meals.Where(meal => meal.DietId == dietId).ToArray();
+            if (meals.Length == 0)
+            {
+                return NotFound();
+            }
+            return Ok(meals);
+        }
+
         //DELETE: /api/meal/delete/bolacha
         [HttpDelete]
         [Route("delete/{nome}")]

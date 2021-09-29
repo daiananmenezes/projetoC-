@@ -11,6 +11,7 @@ namespace API.Models
         public string Descricao { get; set; }
         public string Refeicao { get; set; }
         public string Horario { get; set; }
+        public int DietId { get; set; }
         public DateTime CriadoEm { get; set; }
 
         public override string ToString() =>
