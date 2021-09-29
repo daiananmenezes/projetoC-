@@ -3,5 +3,5 @@ export interface Usuario {
     nome: string;
     email: string;
     objetivo: string;
-    criadoEm: string;
+    criadoEm?: string;
 }

@@ -1,1 +1,7 @@
-<p>listar-usuario works!</p>
+<a routerLink="/usuario/cadastrar">Cadastrar usuario</a>
+
+<ol>
+    <li *ngFor="let usuario of usuarios">
+        {{ usuario.nome }}
+    </li>
+</ol>
