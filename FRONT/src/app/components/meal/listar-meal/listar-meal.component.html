@@ -1,1 +1,6 @@
-<p>cadastrar-meal works!</p>
+<a routerLink="/meal/create">Cadastrar Refeicao</a>
+<ol>
+    <li *ngFor="let meal of meals">
+        {{meal.nome}}
+    </li>
+</ol>

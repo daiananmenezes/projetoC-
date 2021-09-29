@@ -44,7 +44,7 @@ const routes: Routes = [
     component: ListarMealComponent
   },
   {
-    path: "meal/update/:id",
+    path: "meal/update",
     component: EditarMealComponent
   },
   {

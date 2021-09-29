@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Meal } from 'src/app/models/meal';
+import { MealService } from 'src/app/services/meal.service';
 
 @Component({
   selector: 'app-listar-meal',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListarMealComponent implements OnInit {
 
-  constructor() { }
+  meals: Meal[] = [];
+
+  constructor(private service: MealService) {}
 
   ngOnInit(): void {
+    this.service.list().subscribe(meals => {
+      this.meals = meals;
+      console.log(meals);
+    });
   }
-
 }
