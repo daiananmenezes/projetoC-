@@ -1,7 +1,9 @@
-<a routerLink="/refeicao/cadastrar">Cadastrar Refeicao</a>
 <ol>
     <li *ngFor="let diet of diets">
         {{diet.title}}
+        <button routerLink="/dieta/editar/{{diet.id}}"> Editar </button>
+        <button routerLink="/dieta/deletar">Deletar</button>
     </li>
 </ol>
 
+<button routerLink="/">Voltar para home</button>

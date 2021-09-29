@@ -14,12 +14,13 @@ import { CadastrarUsuarioComponent } from "./components/usuario/cadastrar-usuari
 import { EditarUsuarioComponent } from "./components/usuario/editar-usuario/editar-usuario.component";
 import { ListarUsuarioComponent } from "./components/usuario/listar-usuario/listar-usuario.component";
 import { RemoverUsuarioComponent } from "./components/usuario/remover-usuario/remover-usuario.component";
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
 
   {
     path: "",
-    component: ListarUsuarioComponent,
+    component: HomeComponent,
   },
   // Usuario
   {

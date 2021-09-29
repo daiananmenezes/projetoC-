@@ -19,6 +19,7 @@ import { RemoverMealComponent } from './components/meal/remover-meal/remover-mea
 import { EditarMealComponent } from './components/meal/editar-meal/editar-meal.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { FormsModule } from '@angular/forms';
     CadastrarMealComponent,
     ListarMealComponent,
     RemoverMealComponent,
-    EditarMealComponent
+    EditarMealComponent,
+    HomeComponent
 
   ],
   imports: [
