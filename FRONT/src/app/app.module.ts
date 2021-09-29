@@ -7,6 +7,10 @@ import { EditarUsuarioComponent } from './components/usuario/editar-usuario/edit
 import { CadastrarUsuarioComponent } from './components/usuario/cadastrar-usuario/cadastrar-usuario.component';
 import { RemoverUsuarioComponent } from './components/usuario/remover-usuario/remover-usuario.component';
 import { ListarUsuarioComponent } from './components/usuario/listar-usuario/listar-usuario.component';
+import { CadastrarDietComponent } from './components/diet/cadastrar-diet/cadastrar-diet.component';
+import { ListarDietComponent } from './components/diet/listar-diet/listar-diet.component';
+import { AlterarDietComponent } from './components/diet/alterar-diet/alterar-diet.component';
+import { RemoverDietComponent } from './components/diet/remover-diet/remover-diet.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { ListarUsuarioComponent } from './components/usuario/listar-usuario/list
     EditarUsuarioComponent,
     CadastrarUsuarioComponent,
     RemoverUsuarioComponent,
-    ListarUsuarioComponent
+    ListarUsuarioComponent,
+    CadastrarDietComponent,
+    ListarDietComponent,
+    AlterarDietComponent,
+    RemoverDietComponent
   ],
   imports: [
     BrowserModule,
