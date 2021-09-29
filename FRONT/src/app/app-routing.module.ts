@@ -2,6 +2,7 @@ import { AlterarDietComponent } from './components/diet/alterar-diet/alterar-die
 import { RemoverDietComponent } from './components/diet/remover-diet/remover-diet.component';
 import { ListarDietComponent } from './components/diet/listar-diet/listar-diet.component';
 import { CadastrarDietComponent } from './components/diet/cadastrar-diet/cadastrar-diet.component';
+import { MostrarDietComponent } from './components/diet/mostrar-diet/mostrar-diet.component';
 
 import { RemoverMealComponent } from './components/meal/remover-meal/remover-meal.component';
 import { EditarMealComponent } from './components/meal/editar-meal/editar-meal.component';
@@ -71,6 +72,10 @@ const routes: Routes = [
   {
     path: "dieta/editar/:id",
     component: AlterarDietComponent
+  },
+  {
+    path: "dieta/mostrar/:id",
+    component: MostrarDietComponent
   },
   {
     path: "dieta/remover/:title",

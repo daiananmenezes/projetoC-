@@ -4,5 +4,6 @@ export interface Meal {
     descricao: string;
     refeicao: string;
     horario: string;
+    dietid: number;
     criadoEm: string;
 }

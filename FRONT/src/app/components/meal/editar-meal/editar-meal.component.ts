@@ -14,6 +14,7 @@ export class EditarMealComponent implements OnInit {
   refeicao!: string;
   horario!: string;
   criadoEm!: string;
+  dietid!: number;
 
   constructor(private router: Router, private service: MealService) {}
 
@@ -26,6 +27,7 @@ export class EditarMealComponent implements OnInit {
           refeicao: this.refeicao,
           horario: this.horario,
           criadoEm: this.criadoEm,
+          dietid: this.dietid,
       };
       this.service.update(meal).subscribe((meal) => {
           console.log(meal);

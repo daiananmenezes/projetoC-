@@ -2,6 +2,8 @@ import { MealService } from './../../../services/meal.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Meal } from 'src/app/models/meal';
+import { DietService } from 'src/app/services/dieta.service';
+import { Diet } from 'src/app/models/dieta';
 
 @Component({
   selector: 'app-cadastrar-meal',
@@ -16,8 +18,13 @@ export class CadastrarMealComponent implements OnInit {
   refeicao!: string;
   horario!: string;
   criadoEm!: string;
+  dietid!: number;
 
-  constructor(private router: Router, private service: MealService) {}
+  diets!: Diet[];
+
+  constructor(private router: Router, private mealService: MealService, private dietService: DietService) {
+    dietService.list().subscribe(diets => { this.diets = diets });
+  }
 
   ngOnInit(): void {
   }
@@ -28,9 +35,10 @@ export class CadastrarMealComponent implements OnInit {
       descricao: this.descricao,
       refeicao: this.refeicao,
       horario: this.horario,
+      dietid: this.dietid,
       criadoEm: this.criadoEm
     }
-    this.service.create(meal).subscribe(meal => {
+    this.mealService.create(meal).subscribe(meal => {
       console.log("to cadastrando");
       this.router.navigate(["refeicao/listar"]);
     });

@@ -20,6 +20,7 @@ import { EditarMealComponent } from './components/meal/editar-meal/editar-meal.c
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
+import { MostrarDietComponent } from './components/diet/mostrar-diet/mostrar-diet.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { HomeComponent } from './components/home/home.component';
     ListarMealComponent,
     RemoverMealComponent,
     EditarMealComponent,
-    HomeComponent
+    HomeComponent,
+    MostrarDietComponent
 
   ],
   imports: [

@@ -23,6 +23,10 @@ export class MealService {
         return this.http.get<Meal>(`${this.baseUrl}/getbyid/${id}`);
     }
 
+    findByDietId(dietId: Number): Observable<Meal[]> {
+        return this.http.get<Meal[]>(`${this.baseUrl}/getbydietid/${dietId}`);
+    }
+
     update(meal: Meal): Observable<Meal> {
         return this.http.put<Meal>(`${this.baseUrl}/update`, meal);
     }
