@@ -14,6 +14,6 @@ namespace API.Models
         public DateTime CriadoEm { get; set; }
 
         public override string ToString() =>
-            $"Objetivo: {Objetivo} | Data inicio: {DataInicio} | Data fim: {DataFim} | Criado em: {CriadoEm}";
+            $"Title: {Title} | Objetivo: {Objetivo} | Data inicio: {DataInicio} | Data fim: {DataFim} | Criado em: {CriadoEm}";
     }
 }

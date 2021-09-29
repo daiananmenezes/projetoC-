@@ -47,12 +47,12 @@ namespace API.Controllers
 
         //DELETE: /api/meal/delete/bolacha
         [HttpDelete]
-        [Route("delete/{description}")]
-        public IActionResult Delete([FromRoute] string description)
+        [Route("delete/{nome}")]
+        public IActionResult Delete([FromRoute] string nome)
         {
             //Expressão lambda
             //Buscar um objeto na tabela de meals com base no nome
-            Meal meal = _context.Meals.FirstOrDefault(meal => meal.Descricao == description);
+            Meal meal = _context.Meals.FirstOrDefault(meal => meal.Nome == nome);
 
             if (meal == null)
             {
