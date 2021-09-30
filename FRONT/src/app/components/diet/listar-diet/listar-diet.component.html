@@ -2,7 +2,7 @@
     <li *ngFor="let diet of diets">
         {{diet.title}}
         <button routerLink="/dieta/editar/{{diet.id}}"> Editar </button>
-        <button routerLink="/dieta/deletar">Deletar</button>
+        <button (click)="deletar(diet.title)">Deletar</button>
     </li>
 </ol>
 

@@ -31,8 +31,8 @@ export class MealService {
         return this.http.put<Meal>(`${this.baseUrl}/update`, meal);
     }
     
-    delete(meal: Meal): Observable<Meal> {
-        return this.http.delete<Meal>(`${this.baseUrl}/update/${meal.nome}`);
+    delete(nome: string): Observable<Meal> {
+        return this.http.delete<Meal>(`${this.baseUrl}/delete/${nome}`);
     }
 
 }

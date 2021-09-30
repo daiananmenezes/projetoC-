@@ -1,7 +1,9 @@
 <ol>
     <li *ngFor="let meal of meals">
+        {{meal.id}}
         {{meal.nome}}
         <button routerLink="/refeicao/editar/{{meal.id}}"> Editar {{meal.nome}}</button>
+        <button (click)="deletar(meal.nome)">Deletar</button>
     </li>
 </ol>
 

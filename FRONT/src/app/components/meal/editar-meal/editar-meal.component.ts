@@ -9,6 +9,7 @@ import { Meal } from 'src/app/models/meal';
   styleUrls: ['./editar-meal.component.css']
 })
 export class EditarMealComponent implements OnInit {
+  id!: number;
   nome!: string;
   descricao!: string;
   refeicao!: string;
@@ -22,6 +23,7 @@ export class EditarMealComponent implements OnInit {
 
   editar(): void {
       let meal: Meal = {
+          id : this.id,
           nome: this.nome,
           descricao: this.descricao,
           refeicao: this.refeicao,

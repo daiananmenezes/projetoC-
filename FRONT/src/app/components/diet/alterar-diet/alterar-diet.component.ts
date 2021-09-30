@@ -22,6 +22,7 @@ export class AlterarDietComponent implements OnInit {
 
   editar(): void {
       let diet: Diet = {
+          id : this.id,
           title: this.title,
           objetivo: this.objetivo,
           dataInicio: this.dataInicio,

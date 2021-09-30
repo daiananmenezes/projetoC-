@@ -1,8 +1,10 @@
 <ol>
     <li *ngFor="let usuario of usuarios">
+        {{ usuario.id }}
         {{ usuario.nome }}
 
         <button routerLink="/usuario/editar/{{usuario.id}}"> Editar {{usuario.nome}}</button>
+        <button (click)="deletar(usuario.nome)">Deletar</button>
     </li>
 </ol>
 

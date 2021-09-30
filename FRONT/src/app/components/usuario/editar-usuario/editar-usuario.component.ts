@@ -9,6 +9,7 @@ import { UsuarioService } from "src/app/services/usuario.service";
   styleUrls: ['./editar-usuario.component.css']
 })
 export class EditarUsuarioComponent implements OnInit {
+  id!: number;
   nome!: string;
   email!: string;
   objetivo!: string;
@@ -19,6 +20,7 @@ export class EditarUsuarioComponent implements OnInit {
 
   editar(): void {
       let usuario: Usuario = {
+          id : this.id,
           nome: this.nome,
           email: this.email,
           objetivo: this.objetivo,

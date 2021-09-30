@@ -27,8 +27,8 @@ export class DietService {
         return this.http.put<Diet>(`${this.baseUrl}/update`, diet);
     }
     
-    delete(diet: Diet): Observable<Diet> {
-        return this.http.delete<Diet>(`${this.baseUrl}/update/${diet.title}`);
+    delete(title: string): Observable<Diet> {
+        return this.http.delete<Diet>(`${this.baseUrl}/delete/${title}`);
     }
 
 }
