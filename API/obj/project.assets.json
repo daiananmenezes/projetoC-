@@ -735,19 +735,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\daian\\.nuget\\packages\\": {}
+    "C:\\Users\\eduta\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ProjetoC\\projetoC-\\API\\API.csproj",
+      "projectUniqueName": "D:\\Dev\\projetoC-\\api\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\ProjetoC\\projetoC-\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\daian\\.nuget\\packages\\",
-      "outputPath": "C:\\ProjetoC\\projetoC-\\API\\obj\\",
+      "projectPath": "D:\\Dev\\projetoC-\\api\\API.csproj",
+      "packagesPath": "C:\\Users\\eduta\\.nuget\\packages\\",
+      "outputPath": "D:\\Dev\\projetoC-\\api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\daian\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\eduta\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -798,7 +798,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
