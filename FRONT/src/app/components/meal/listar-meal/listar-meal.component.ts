@@ -11,6 +11,11 @@ import { MealService } from 'src/app/services/meal.service';
 export class ListarMealComponent implements OnInit {
 
   meals: Meal[] = [];
+  colunasExibidas: String[] = [
+    "id",
+    "nome",
+    "descricao",
+];
 
   constructor(private service: MealService, private router: Router) {}
 

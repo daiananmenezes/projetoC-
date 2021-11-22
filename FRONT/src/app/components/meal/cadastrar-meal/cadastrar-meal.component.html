@@ -1,27 +1,37 @@
-<div id="nome">
-    <label for="nome">Nome:</label>
-    <input type="text" name="nome" [(ngModel)]="nome">
-</div>
-<div id="descricao">
-    <label for="descricao">Descrição:</label>
-    <input type="text" name="descricao" [(ngModel)]="descricao">
-</div>
-<div id="refeicao">
-    <label for="refeicao">Refeicao:</label>
-    <input type="text" name="refeicao" [(ngModel)]="refeicao">
-</div>
-<div id="horario">
-    <label for="horario">Horario:</label>
-    <input type="text" name="horario" [(ngModel)]="horario">
-</div>
-<div id="dieta">
-    <label for="dieta">Dieta:</label>
-    <select name="dietid" [(ngModel)]="dietid">
-        <option *ngFor="let diet of diets" value="{{diet.id}}">
-            {{diet.title}}
-        </option>
-    </select>
-</div>
-
-<button (click)="cadastrar()">Cadastrar</button>
-<button routerLink="/">Voltar</button>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Cadastrar Refeição</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-form-field class="input" id="nome">
+            <mat-label for="nome">Nome:</mat-label>
+            <input matInput type="text" name="nome" [(ngModel)]="nome" />
+        </mat-form-field>
+        <mat-form-field class="input" id="descricao">
+            <mat-label for="descricao">Descrição:</mat-label>
+            <input matInput type="text" name="descricao" [(ngModel)]="descricao" />
+        </mat-form-field>
+        <mat-form-field class="input" id="refeicao">
+            <mat-label for="refeicao">Refeição:</mat-label>
+            <input matInput type="text" name="refeicao" [(ngModel)]="refeicao" />
+        </mat-form-field>
+        <mat-form-field class="input" id="horario">
+            <mat-label for="horario">Horario:</mat-label>
+            <input matInput type="text" name="horario" [(ngModel)]="horario" />
+        </mat-form-field>
+        <mat-form-field class="input" id="dieta">
+            <mat-label for="dieta">dieta:</mat-label>
+            <mat-select name="dietid" [(ngModel)]="dietid">
+                <mat-option
+                    *ngFor="let diet of diets"
+                    value="{{ diet.id }}"
+                >
+                    {{ diet.title }}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+    </mat-card-content>
+    <button mat-raised-button color="warn" (click)="cadastrar()">
+        Cadastrar
+    </button>
+</mat-card>
