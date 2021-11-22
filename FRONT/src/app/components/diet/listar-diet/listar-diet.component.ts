@@ -10,6 +10,11 @@ import { Router } from '@angular/router';
 })
 export class ListarDietComponent implements OnInit {
   diets: Diet[] = [];
+  colunasExibidas: String[] = [
+    "id",
+    "nome",
+    "objetivo",
+];
 
   constructor(private service: DietService, private router: Router) {}
 

@@ -1,11 +1,19 @@
-<div id="nome">
-    <label for="nome">Nome:</label>
-    <input type="text" name="nome" [(ngModel)]="title">
-</div>
-<div id="descricao">
-    <label for="descricao">Objetivo:</label>
-    <input type="text" name="descricao" [(ngModel)]="objetivo">
-</div>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Cadastrar Dieta</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-form-field class="input" id="nome">
+            <mat-label for="nome">Nome:</mat-label>
+            <input matInput type="text" name="nome" [(ngModel)]="title" />
+        </mat-form-field>
+        <mat-form-field class="input" id="objetivo">
+            <mat-label for="objetivo">Objetivo:</mat-label>
+            <input matInput type="text" name="objetivo" [(ngModel)]="objetivo" />
+        </mat-form-field>
+    </mat-card-content>
+    <button mat-raised-button color="warn" (click)="cadastrar()">
+        Cadastrar
+    </button>
+</mat-card>
 
-<button (click)="cadastrar()">Cadastrar</button>
-<button routerLink="/">Voltar</button>
