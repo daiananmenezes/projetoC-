@@ -10,6 +10,12 @@ import { Router } from '@angular/router';
 })
 export class ListarUsuarioComponent implements OnInit {
   usuarios: Usuario[] = [];
+  colunasExibidas: String[] = [
+    "id",
+    "nome",
+    "email",
+    "objetivo",
+];
 
 
   constructor(private service: UsuarioService, private router: Router) {}
