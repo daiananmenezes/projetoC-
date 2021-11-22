@@ -10,7 +10,7 @@ import { ListarUsuarioComponent } from './components/usuario/listar-usuario/list
 import { CadastrarDietComponent } from './components/diet/cadastrar-diet/cadastrar-diet.component';
 import { ListarDietComponent } from './components/diet/listar-diet/listar-diet.component';
 import { AlterarDietComponent } from './components/diet/alterar-diet/alterar-diet.component';
-
+import { TemplateComponent } from "./components/template/template.component";
 
 import { CadastrarMealComponent } from './components/meal/cadastrar-meal/cadastrar-meal.component';
 import { ListarMealComponent } from './components/meal/listar-meal/listar-meal.component';
@@ -20,6 +20,17 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home/home.component';
 import { MostrarDietComponent } from './components/diet/mostrar-diet/mostrar-diet.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { MatButtonModule } from "@angular/material/button";
+import { MatCardModule } from "@angular/material/card";
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatIconModule } from "@angular/material/icon";
+import { MatInputModule } from "@angular/material/input";
+import { MatListModule } from "@angular/material/list";
+import { MatSelectModule } from "@angular/material/select";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatTableModule } from "@angular/material/table";
+import { MatToolbarModule } from "@angular/material/toolbar";
 
 
 @NgModule({
@@ -35,15 +46,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ListarMealComponent,
     EditarMealComponent,
     HomeComponent,
-    MostrarDietComponent
-
+    MostrarDietComponent,
+    TemplateComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCardModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
