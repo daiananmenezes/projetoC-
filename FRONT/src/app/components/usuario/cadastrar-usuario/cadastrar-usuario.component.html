@@ -1,14 +1,22 @@
-<div id="nome">
-    <label for="nome">Nome:</label>
-    <input type="text" name="nome" [(ngModel)]="nome" />
-</div>
-<div id="email">
-    <label for="email">Email:</label>
-    <input type="text" name="email" [(ngModel)]="email" />
-</div>
-<div id="objetivo">
-    <label for="objetivo">Objetivo:</label>
-    <input type="text" name="objetivo" [(ngModel)]="objetivo" />
-</div>
-<button (click)="cadastrar()">Cadastrar</button>
-<button routerLink="/">Voltar</button>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Cadastrar Usuario</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-form-field class="input" id="nome">
+            <mat-label for="nome">Nome:</mat-label>
+            <input matInput type="text" name="nome" [(ngModel)]="nome" />
+        </mat-form-field>
+        <mat-form-field class="input" id="email">
+            <mat-label for="email">Email:</mat-label>
+            <input matInput type="text" name="email" [(ngModel)]="email" />
+        </mat-form-field>
+        <mat-form-field class="input" id="objetivo">
+            <mat-label for="objetivo">Objetivo:</mat-label>
+            <input matInput type="text" name="objetivo" [(ngModel)]="objetivo" />
+        </mat-form-field>
+    </mat-card-content>
+    <button mat-raised-button color="warn" (click)="cadastrar()">
+        Cadastrar
+    </button>
+</mat-card>
